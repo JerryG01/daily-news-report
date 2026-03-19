@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>每日简报 | News Reporter</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            mono: ['JetBrains Mono', 'monospace'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            terminal: {
+              bg:    '#0a0e17',
+              panel: '#111827',
+              card:  '#1a2235',
+              border:'#1e2d4a',
+              muted: '#3d5478',
+              text:  '#e2e8f0',
+              dim:   '#64748b',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background: #0a0e17;
+      color: #e2e8f0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* ── Custom Scrollbar ── */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #0a0e17; }
+    ::-webkit-scrollbar-thumb { background: #1e2d4a; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #2d4168; }
+
+    /* ── Loading Skeleton ── */
+    @keyframes pulse-bar {
+      0%, 100% { opacity: 0.4; }
+      50%       { opacity: 1; }
+    }
+    .skeleton-bar {
+      height: 12px;
+      border-radius: 4px;
+      background: #1a2235;
+      animation: pulse-bar 1.5s ease-in-out infinite;
+    }
+    .skeleton-bar:nth-child(2) { width: 75%; animation-delay: .1s; }
+    .skeleton-bar:nth-child(3) { width: 90%; animation-delay: .2s; }
+    .skeleton-bar:nth-child(4) { width: 60%; animation-delay: .3s; }
+    .skeleton-bar:nth-child(5) { width: 80%; animation-delay: .4s; }
+
+    /* ── Tab Indicator ── */
+    .tab-active {
+      background: #1e293b;
+      border-color: #3b82f6 !important;
+      color: #60a5fa !important;
+    }
+
+    /* ── Brief Content Override ── */
+    #brief-content {
+      line-height: 1.7;
+    }
+    #brief-content .container { max-width: 100% !important; padding: 0 !important; margin: 0 !important; background: transparent !important; }
+    #brief-content .header {
+      background: linear-gradient(135deg, #0f1f38, #162035) !important;
+      border: 1px solid #1e2d4a !important;
+      border-radius: 10px !important;
+      color: #e2e8f0 !important;
+      padding: 20px 24px !important;
+      margin-bottom: 16px !important;
+    }
+    #brief-content .header .date  { color: #60a5fa !important; font-size: 13px !important; }
+    #brief-content .header .tag   { background: #e94560 !important; color: #fff !important; font-size: 12px !important; padding: 3px 10px !important; border-radius: 20px !important; font-weight: 600 !important; display: inline-block !important; margin-bottom: 8px !important; }
+    #brief-content .header h1     { font-size: 20px !important; font-weight: 700 !important; margin-bottom: 6px !important; color: #f1f5f9 !important; }
+    #brief-content .header .source { font-size: 12px !important; color: #64748b !important; }
+    #brief-content .alert-box {
+      background: rgba(233,69,96,0.1) !important;
+      border-left: 3px solid #e94560 !important;
+      border-radius: 4px !important;
+      padding: 10px 14px !important;
+      margin-bottom: 12px !important;
+      font-size: 13px !important;
+      color: #fca5a5 !important;
+    }
+    #brief-content .section {
+      background: #111827 !important;
+      border: 1px solid #1e2d4a !important;
+      border-radius: 10px !important;
+      padding: 18px 22px !important;
+      margin-bottom: 14px !important;
+    }
+    #brief-content .section-title {
+      font-size: 14px !important;
+      font-weight: 700 !important;
+      margin-bottom: 12px !important;
+      padding-bottom: 8px !important;
+      border-bottom: 2px solid #1e2d4a !important;
+      display: flex !important;
+      align-items: center !important;
+      gap: 8px !important;
+    }
+    #brief-content .section-title .icon { font-size: 17px !important; }
+    #brief-content .section-title.forex    { border-bottom-color: #3b82f6 !important; color: #60a5fa !important; }
+    #brief-content .section-title.bond     { border-bottom-color: #f59e0b !important; color: #fbbf24 !important; }
+    #brief-content .section-title.futures  { border-bottom-color: #a855f7 !important; color: #c084fc !important; }
+    #brief-content .section-title.macro    { border-bottom-color: #ef4444 !important; color: #f87171 !important; }
+    #brief-content .section-title.a_stock  { border-bottom-color: #22c55e !important; color: #4ade80 !important; }
+    #brief-content .section-title.liquidity{ border-bottom-color: #06b6d4 !important; color: #22d3ee !important; }
+    #brief-content .item {
+      display: flex !important;
+      gap: 10px !important;
+      margin-bottom: 10px !important;
+      font-size: 14px !important;
+      line-height: 1.7 !important;
+    }
+    #brief-content .item::before { content: "▸" !important; color: #3d5478 !important; font-size: 11px !important; margin-top: 5px !important; flex-shrink: 0 !important; }
+    #brief-content .item span { color: #cbd5e1 !important; }
+    #brief-content .highlight-red   { color: #f87171 !important; font-weight: 600 !important; }
+    #brief-content .highlight-green { color: #4ade80 !important; font-weight: 600 !important; }
+    #brief-content .highlight-blue  { color: #60a5fa !important; font-weight: 600 !important; }
+    #brief-content table { width: 100% !important; border-collapse: collapse !important; font-size: 13px !important; margin-top: 8px !important; }
+    #brief-content th { background: #0f1f38 !important; color: #94a3b8 !important; padding: 7px 10px !important; text-align: left !important; font-weight: 600 !important; border-bottom: 1px solid #1e2d4a !important; }
+    #brief-content td { padding: 6px 10px !important; border-bottom: 1px solid #1e2d4a !important; color: #cbd5e1 !important; }
+    #brief-content tr:last-child td { border-bottom: none !important; }
+    #brief-content tr:hover td { background: rgba(59,130,246,0.04) !important; }
+    #brief-content .up   { color: #f87171 !important; }
+    #brief-content .down { color: #4ade80 !important; }
+    #brief-content .footer { text-align: center !important; font-size: 11px !important; color: #3d5478 !important; margin-top: 16px !important; padding: 12px !important; }
+    #brief-content .tag-dark { background: #1e293b !important; color: #94a3b8 !important; font-size: 11px !important; padding: 2px 7px !important; border-radius: 4px !important; font-weight: 600 !important; }
+
+    /* ── h2 section titles (legacy brief) ── */
+    #brief-content h2 {
+      font-size: 15px !important;
+      font-weight: 700 !important;
+      margin-top: 20px !important;
+      margin-bottom: 10px !important;
+      padding-bottom: 6px !important;
+      border-bottom: 2px solid #1e2d4a !important;
+      color: #60a5fa !important;
+      display: flex !important;
+      align-items: center !important;
+      gap: 6px !important;
+    }
+    #brief-content .item { padding: 0 !important; border: none !important; }
+    #brief-content .label {
+      display: inline-block !important;
+      padding: 1px 6px !important;
+      border-radius: 3px !important;
+      font-size: 11px !important;
+      font-weight: 700 !important;
+      margin-right: 6px !important;
+    }
+    #brief-content .label.fed  { background: rgba(239,68,68,0.2) !important;  color: #f87171 !important; }
+    #brief-content .label      { background: rgba(59,130,246,0.2) !important; color: #60a5fa !important; }
+    #brief-content .label.omo  { background: rgba(34,197,94,0.2) !important; color: #4ade80 !important; }
+    #brief-content .label.local{ background: rgba(245,158,11,0.2) !important; color: #fbbf24 !important; }
+    #brief-content .note {
+      background: rgba(245,158,11,0.08) !important;
+      border-left: 3px solid #f59e0b !important;
+      padding: 10px 14px !important;
+      border-radius: 4px !important;
+      font-size: 13px !important;
+      color: #fbbf24 !important;
+      margin-top: 12px !important;
+    }
+    #brief-content .tag { background: #e94560 !important; }
+
+    /* ── Fade in animation ── */
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+    .fade-in { animation: fadeIn .25s ease-out forwards; }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- ═══════════════════════════════════════════
+       HEADER BAR
+  ═══════════════════════════════════════════ -->
+  <header class="border-b border-terminal-border bg-terminal-panel px-4 py-3 flex items-center justify-between shrink-0">
+    <div class="flex items-center gap-3">
+      <div class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></div>
+      <span class="font-mono text-sm font-bold tracking-widest text-terminal-text uppercase">News Reporter</span>
+      <span class="font-mono text-xs text-terminal-dim">// 每日简报</span>
+    </div>
+    <div class="flex items-center gap-2 font-mono text-xs text-terminal-dim">
+      <span id="clock" class="text-terminal-muted">--:--:--</span>
+      <span class="text-terminal-border">|</span>
+      <span id="date-str">----/--/--</span>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       TAB SWITCHER
+  ═══════════════════════════════════════════ -->
+  <div class="border-b border-terminal-border bg-terminal-bg px-4 py-2 flex items-center gap-3 shrink-0">
+    <span class="font-mono text-xs text-terminal-dim uppercase tracking-wider mr-1">版本</span>
+    <button id="tab-today"    onclick="switchTab('today')"    class="tab-active font-mono text-xs px-4 py-1.5 rounded border border-terminal-border text-terminal-dim transition-all duration-150">今日</button>
+    <button id="tab-yesterday"onclick="switchTab('yesterday')" class="font-mono text-xs px-4 py-1.5 rounded border border-terminal-border text-terminal-dim transition-all duration-150">昨日</button>
+    <div class="ml-auto flex items-center gap-2">
+      <div id="status-dot" class="w-1.5 h-1.5 rounded-full bg-terminal-muted"></div>
+      <span id="status-text" class="font-mono text-xs text-terminal-dim">加载中</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       MAIN CONTENT
+  ═══════════════════════════════════════════ -->
+  <main class="flex-1 overflow-auto">
+    <div id="brief-content" class="max-w-4xl mx-auto px-4 py-5">
+      <!-- Skeleton loader -->
+      <div id="skeleton" class="space-y-4 fade-in">
+        <div class="bg-terminal-card border border-terminal-border rounded-xl p-6">
+          <div class="skeleton-bar mb-2" style="width:40%"></div>
+          <div class="skeleton-bar mb-2"></div>
+          <div class="skeleton-bar" style="width:60%"></div>
+        </div>
+        <div class="bg-terminal-card border border-terminal-border rounded-xl p-6 space-y-3">
+          <div class="skeleton-bar"></div>
+          <div class="skeleton-bar"></div>
+          <div class="skeleton-bar" style="width:70%"></div>
+          <div class="skeleton-bar" style="width:85%"></div>
+        </div>
+        <div class="bg-terminal-card border border-terminal-border rounded-xl p-6 space-y-3">
+          <div class="skeleton-bar"></div>
+          <div class="skeleton-bar" style="width:75%"></div>
+          <div class="skeleton-bar"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="border-t border-terminal-border px-4 py-2 flex items-center justify-between shrink-0">
+    <span class="font-mono text-xs text-terminal-muted">news_reporter · auto-generated</span>
+    <span class="font-mono text-xs text-terminal-muted">仅供参考，不构成投资建议</span>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       CORE LOGIC
+  ═══════════════════════════════════════════ -->
+  <script>
+    // ── Clock ──────────────────────────────────
+    function updateClock() {
+      const now = new Date();
+      const pad = n => String(n).padStart(2, '0');
+      document.getElementById('clock').textContent =
+        `${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
+      document.getElementById('date-str').textContent =
+        `${now.getFullYear()}/${pad(now.getMonth()+1)}/${pad(now.getDate())}`;
+    }
+    updateClock();
+    setInterval(updateClock, 1000);
+
+    // ── File map ────────────────────────────────
+    // 部署时修改这里的路径为相对路径
+    const FILES = {
+      today:    '../news_reporter/reports/daily_brief_2026_03_19.html',
+      yesterday:'../news_reporter/reports/daily_brief.html'
+    };
+
+    // ── Load brief ──────────────────────────────
+    let currentTab = null;
+
+    function setStatus(dotColor, text, textColor) {
+      const dot  = document.getElementById('status-dot');
+      const textEl = document.getElementById('status-text');
+      dot.className = `w-1.5 h-1.5 rounded-full ${dotColor}`;
+      textEl.textContent = text;
+      textEl.className = `font-mono text-xs ${textColor}`;
+    }
+
+    function showSkeleton() {
+      document.getElementById('brief-content').innerHTML = `
+        <div id="skeleton" class="space-y-4 fade-in">
+          <div class="bg-terminal-card border border-terminal-border rounded-xl p-6">
+            <div class="skeleton-bar mb-2" style="width:40%"></div>
+            <div class="skeleton-bar mb-2"></div>
+            <div class="skeleton-bar" style="width:60%"></div>
+          </div>
+          <div class="bg-terminal-card border border-terminal-border rounded-xl p-6 space-y-3">
+            <div class="skeleton-bar"></div>
+            <div class="skeleton-bar"></div>
+            <div class="skeleton-bar" style="width:70%"></div>
+            <div class="skeleton-bar" style="width:85%"></div>
+          </div>
+          <div class="bg-terminal-card border border-terminal-border rounded-xl p-6 space-y-3">
+            <div class="skeleton-bar"></div>
+            <div class="skeleton-bar" style="width:75%"></div>
+            <div class="skeleton-bar"></div>
+          </div>
+        </div>`;
+    }
+
+    async function loadBrief(tab) {
+      if (currentTab === tab) return;
+      currentTab = tab;
+      showSkeleton();
+      setStatus('bg-yellow-400', '加载中...', 'text-yellow-400');
+
+      // Highlight active tab
+      document.getElementById('tab-today').classList.toggle('tab-active',    tab === 'today');
+      document.getElementById('tab-yesterday').classList.toggle('tab-active', tab === 'yesterday');
+
+      try {
+        const resp = await fetch(FILES[tab]);
+        if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+        const html = await resp.text();
+
+        // Parse: extract <body> innerHTML
+        const bodyMatch = html.match(/<body[^>]*>([\s\S]*)<\/body>/i);
+        let content = bodyMatch ? bodyMatch[1] : html;
+
+        // Remove the original <html>/<head> junk if it slipped in
+        content = content.replace(/<html[^>]*>|<\/html>|<head[^>]*>[\s\S]*?<\/head>/gi, '');
+
+        const container = document.getElementById('brief-content');
+        container.innerHTML = `<div class="fade-in">${content}</div>`;
+
+        setStatus('bg-green-400', '已加载', 'text-green-400');
+      } catch (err) {
+        console.error(err);
+        document.getElementById('brief-content').innerHTML = `
+          <div class="bg-terminal-card border border-terminal-border rounded-xl p-8 text-center fade-in">
+            <div class="text-2xl mb-3">⚠️</div>
+            <div class="font-mono text-sm text-red-400 mb-1">加载失败</div>
+            <div class="font-mono text-xs text-terminal-dim">${err.message}</div>
+            <div class="font-mono text-xs text-terminal-muted mt-3">请确认简报文件路径正确，且服务器允许跨域加载</div>
+          </div>`;
+        setStatus('bg-red-500', '加载失败', 'text-red-400');
+      }
+    }
+
+    function switchTab(tab) {
+      loadBrief(tab);
+    }
+
+    // ── Auto-load today on start ────────────────
+    loadBrief('today');
+  </script>
+</body>
+</html>
