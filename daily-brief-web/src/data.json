@@ -1,0 +1,40 @@
+{
+  "status": {
+    "run_status": "success",
+    "header_template": "[success] 双源发布（jin10 / cls）"
+  },
+  "events": [
+    {
+      "display_time": "08:30",
+      "headline": "央行今日开展 100 亿元 7 天期逆回购操作，中标利率为 1.80%，与此前持平。",
+      "primary_category": "liquidity",
+      "secondary_tags": ["央行"],
+      "source_badges": ["jin10", "cls"],
+      "publish_ready": true
+    },
+    {
+      "display_time": "09:15",
+      "headline": "【债券点评】昨夜美股美债'双杀'构成今日债市最重要的外部压力。\n\n国内债市短线偏强但结构性分化，中短端利率债和高等级信用债受益于避险需求，长端和低等级信用债面临美债收益率传导压力。",
+      "primary_category": "rates_bonds",
+      "secondary_tags": ["债券"],
+      "source_badges": ["分析师"],
+      "publish_ready": true
+    },
+    {
+      "display_time": "09:45",
+      "headline": "上证指数高开 0.3% 后震荡走低，创业板指跌超 1%，成交额较昨日放大 12%。",
+      "primary_category": "equity_a",
+      "secondary_tags": ["A股"],
+      "source_badges": ["jin10"],
+      "publish_ready": true
+    },
+    {
+      "display_time": "10:00",
+      "headline": "USDCNY 早盘报 6.9210，较昨日中间价小幅升值 0.05%，客盘结汇需求对人民币形成支撑。",
+      "primary_category": "fx_gold_commodities",
+      "secondary_tags": ["外汇"],
+      "source_badges": ["cls", "jin10"],
+      "publish_ready": true
+    }
+  ]
+}

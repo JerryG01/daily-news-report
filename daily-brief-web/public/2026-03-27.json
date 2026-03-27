@@ -1,0 +1,48 @@
+{
+  "status": {
+    "run_status": "success",
+    "header_template": "[success] 双源发布（jin10 / cls）"
+  },
+  "events": [
+    {
+      "display_time": "08:30",
+      "headline": "央行今日开展 100 亿元 7 天期逆回购操作，中标利率为 1.80%，与此前持平。",
+      "primary_category": "liquidity",
+      "secondary_tags": ["央行"],
+      "source_badges": ["jin10", "cls"],
+      "publish_ready": true
+    },
+    {
+      "display_time": "09:15",
+      "headline": "【债券点评】昨夜美股美债双杀构成今日债市最重要的外部压力。国内债市短线偏强但结构性分化，中短端利率债和高等级信用债受益于避险需求，长端和低等级信用债面临美债收益率传导压力。",
+      "primary_category": "rates_bonds",
+      "secondary_tags": ["债券"],
+      "source_badges": ["分析师"],
+      "publish_ready": true
+    },
+    {
+      "display_time": "09:45",
+      "headline": "上证指数高开 0.3% 后震荡走低，创业板指跌超 1%，成交额较昨日放大 12%。",
+      "primary_category": "equity_a",
+      "secondary_tags": ["A股"],
+      "source_badges": ["jin10"],
+      "publish_ready": true
+    }
+  ],
+  "fun_fact": {
+    "title": "🧠 每日冷知识",
+    "content": "你知道吗？世界上第一只指数基金是由约翰·博格在1976年创立的，当时被华尔街嘲笑为'博格的愚蠢'。如今，低成本的被动投资已成为全球资产管理行业的主流，管理的资产超过17万亿美元。"
+  },
+  "selected_articles": [
+    {
+      "title": "美联储降息路径推演：三季度或是关键窗口",
+      "source": "华尔街见闻",
+      "url": "#"
+    },
+    {
+      "title": "深度：城投债化解的下半场",
+      "source": "固收分析师",
+      "url": "#"
+    }
+  ]
+}
