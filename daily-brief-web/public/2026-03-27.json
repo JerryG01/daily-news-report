@@ -1,48 +1,528 @@
 {
   "status": {
-    "run_status": "success",
-    "header_template": "[success] 双源发布（jin10 / cls）"
+    "run_status": "failed",
+    "publish_state": "blocked",
+    "severity": "danger",
+    "header_template": "[failed] failed：未形成可发布事件",
+    "disclosure": "failed：未形成可发布事件",
+    "sources_success": [
+      "cls",
+      "jin10"
+    ],
+    "sources_failed": []
   },
   "events": [
     {
-      "display_time": "08:30",
-      "headline": "央行今日开展 100 亿元 7 天期逆回购操作，中标利率为 1.80%，与此前持平。",
-      "primary_category": "liquidity",
-      "secondary_tags": ["央行"],
-      "source_badges": ["jin10", "cls"],
-      "publish_ready": true
-    },
-    {
-      "display_time": "09:15",
-      "headline": "【债券点评】昨夜美股美债双杀构成今日债市最重要的外部压力。国内债市短线偏强但结构性分化，中短端利率债和高等级信用债受益于避险需求，长端和低等级信用债面临美债收益率传导压力。",
-      "primary_category": "rates_bonds",
-      "secondary_tags": ["债券"],
-      "source_badges": ["分析师"],
-      "publish_ready": true
-    },
-    {
-      "display_time": "09:45",
-      "headline": "上证指数高开 0.3% 后震荡走低，创业板指跌超 1%，成交额较昨日放大 12%。",
+      "run_id": null,
+      "canonical_id": "can_77e5fa50f791b837",
+      "display_time": "16:11:16",
+      "headline": "三星电子2026年HBM出货量预计超过100亿Gb 《科创板日报》27日讯，由于英伟达、博通和AMD等客户的需求，三星电子今年的HBM出货量预计将超过100亿Gb。三星电子存储器开发执行副总裁黄相俊表示：“正在快速扩大HBM的产能。我们计划今年将其提高到去年水平的三倍以上。” (ZDnet)",
       "primary_category": "equity_a",
-      "secondary_tags": ["A股"],
-      "source_badges": ["jin10"],
+      "secondary_tags": [],
+      "source_badges": [
+        "cls"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": true
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_d6ca77b5f34dca26",
+      "display_time": "16:12:24",
+      "headline": "人保集团总裁赵鹏：2025年日均赔付支出13亿元 承担保险责任金额居行业首位 财联社3月27日电，今日在中国人保2025年度业绩发布会上，人保集团总裁赵鹏在介绍2025年度业绩时表示，2025年人保功能作用充分发挥。全年承担保险责任金额3648万亿元，居行业首位，增长14.9%。保险保障覆盖国民经济行业全部20个门类。赔付支出4729亿元，日均13亿，居行业首位。理赔件数超2亿件，日均55万件。启动一二三级理赔应急响应超100次，高效应对西藏定日地震、四川筠连山体滑坡等重大灾害事故，提高风险减量服务覆盖率，服务各类客户超9000万次",
+      "primary_category": "other_review",
+      "secondary_tags": [],
+      "source_badges": [
+        "cls"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": false
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_9b739daffd15fd32",
+      "display_time": "16:19:28",
+      "headline": "花旗：升信达生物目标价至115港元 评级“买入” 财联社3月27日电，花旗发布研报称，信达生物(01801)去年收入同比升38%至130亿元人民币，纯利录得8.34亿元人民币，同比扭亏为盈。管理阶层重申2027年产品销售额为200亿元人民币指引。管理层指出，尽管近期价格调整和竞争加剧，但玛仕度肽(mazdutide)销售仍保持良好势头。该行对公司今年和明年收入上调24%及23%，各年每股盈测分别上调33%及5%，其目标价由110港元上调至115港元，维持其评级为“买入”",
+      "primary_category": "other_review",
+      "secondary_tags": [],
+      "source_badges": [
+        "cls"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": false
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_f54e5ef0c46c301c",
+      "display_time": "16:20:07",
+      "headline": "大众汽车：与美国电动汽车公司Rivian的合资企业RV Tech已成功完成冬季测试。",
+      "primary_category": "macro_global",
+      "secondary_tags": [],
+      "source_badges": [
+        "jin10"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": true
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_1a67b8c5ef2348ad",
+      "display_time": "16:20:45",
+      "headline": "金十数据3月27日讯，阿拉丁公告，公司于2026年3月27日召开董事会，同意将“阿拉丁高纯度科研试剂研发中心建设及其配套项目”“高纯度科研试剂生产基地项目”及“张江生物试剂研发实验室项目”的建设期延长至2027年3月。公司2022年发行可转债，募集资金净额3.73亿元。此次延期未改变投资方向等，不影响项目实施，有利于提升资金使用效率，符合公司长远发展要求。",
+      "primary_category": "rates_bonds",
+      "secondary_tags": [],
+      "source_badges": [
+        "jin10"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": true
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_bee0f37b36db0042",
+      "display_time": "16:23:04",
+      "headline": "金十数据3月27日讯，欧洲央行管委帕察利季斯表示，欧洲央行不应因能源成本飙升而仓促加息，因为其“基准情景”展望仍然有效，且目前尚无通胀正变得顽固的迹象。帕察利季斯表示，如果他看到欧盟通胀顽固的证据，他将毫不犹豫地加息，但目前尚无此类证据。“我们目前掌握的信息还不足以决定，这种情况是应当被暂时忽略，还是需要据此对利率作出决定，”帕察利季斯表示：“我不会仓促做出任何决定。”",
+      "primary_category": "macro_cn",
+      "secondary_tags": [
+        "央行"
+      ],
+      "source_badges": [
+        "jin10"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": true
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_b9dbcd72b0ec56e8",
+      "display_time": "16:23:07",
+      "headline": "金十数据3月27日讯，今日在中国人保2025年度业绩发布会上，人保集团总裁赵鹏在介绍2025年度业绩时表示，2025年人保功能作用充分发挥。全年承担保险责任金额3648万亿元，居行业首位，增长14.9%。保险保障覆盖国民经济行业全部20个门类。赔付支出4729亿元，日均13亿，居行业首位。理赔件数超2亿件，日均55万件。启动一二三级理赔应急响应超100次，高效应对西藏定日地震、四川筠连山体滑坡等重大灾害事故，提高风险减量服务覆盖率，服务各类客户超9000万次。",
+      "primary_category": "other_review",
+      "secondary_tags": [],
+      "source_badges": [
+        "jin10"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": false
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_b23b08773070630e",
+      "display_time": "16:25:02",
+      "headline": "龙虎榜|赣锋锂业今日涨停 国泰海通宁波广福街净买入1.48亿元 财联社3月27日电，赣锋锂业今日涨停，成交额100.74亿元，换手率10.83%，盘后龙虎榜数据显示，深股通专用席位买入7.49亿元并卖出6.70亿元，3家机构专用席位净买入3.03亿元。国泰海通宁波广福街净买入1.48亿元",
+      "primary_category": "other_review",
+      "secondary_tags": [],
+      "source_badges": [
+        "cls",
+        "jin10"
+      ],
+      "source_count": 2,
+      "importance": "high",
+      "market_impact_hint": "review",
+      "publish_ready": false
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_4f97d01a71a661c0",
+      "display_time": "16:25:49",
+      "headline": "海南省副省长李锋：将康养产业作为银发经济的重点发展方向 财联社3月27日电，海南省副省长李锋3月27日在博鳌亚洲论坛2026年年会“亚洲银发市场潜力与价值共创”分论坛上表示，海南素有“世界长寿岛”的美誉，拥有得天独厚的生态环境，丰富的康养资源，以及量身定制的开放政策优势。近年来，海南将康养产业作为银发经济的重点发展方向，着力打造高端医疗、健康管理、康复、疗养、旅居养老等多元业态。一批国际领先的医疗机构落户海南，多层次养老服务体系加快构建，医养结合模式不断创新，每年吸引超过100万候鸟老年人旅居海南，健康海南品牌影响力不断提升",
+      "primary_category": "policy",
+      "secondary_tags": [],
+      "source_badges": [
+        "cls"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": true
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_16bfc2f9645a3abd",
+      "display_time": "16:26:12",
+      "headline": "金十期货3月27日讯，富宝资讯数据显示，今日富宝电碳现货基差指数为-825元/吨（-80元/吨）；电池级碳酸锂报156900元/吨（+400元/吨）；工业级碳酸锂（综合）报155550元/吨（+400元/吨）；电池级碳酸锂长协均价150150元/吨（+100元/吨）；氢氧化锂指数报147500元/吨（+500元/吨）；金属锂指数报1050000元/吨（持平）；富宝卤水（硫酸锂）折扣系数报75%（+1）；碳酸锂期货震荡走强，基差报价大稳小动，买盘偏弱。",
+      "primary_category": "fx_gold_commodities",
+      "secondary_tags": [
+        "商品"
+      ],
+      "source_badges": [
+        "jin10"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": true
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_e3edef11679fb58c",
+      "display_time": "16:26:47",
+      "headline": "天准科技：拟投资约10亿元建设高端视觉装备产业化项目 财联社3月27日电，天准科技(688003.SH)公告称，公司拟以约10亿元(含土地出让金)投资建设高端视觉装备产业化建设项目，项目位于苏州市虎丘区科技城，占地面积约92亩，规划建筑面积约14.6万平方米，建设周期24个月，预计2026年9月开工。资金来源为自有或自筹资金，项目尚需通过公开竞拍取得土地使用权并完成相关审批手续。该事项已经董事会审议通过，无需提交股东大会审议，不构成关联交易或重大资产重组",
+      "primary_category": "other_review",
+      "secondary_tags": [],
+      "source_badges": [
+        "cls"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": false
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_4650bd874cac385f",
+      "display_time": "16:26:59",
+      "headline": "金十数据3月27日讯，华海药业公告，公司下属控股子公司华奥泰与ALM达成全球研究合作及许可协议，用于开发具有多种潜在适应症（包括医学皮肤科）的新靶点的单克隆抗体候选药物。根据本协议，华奥泰拥有在中国开发和商业化项目和产品的权利，ALM拥有在中国以外的全球开发和商业化项目和产品的权利。利用创新研发平台，华奥泰将开展相关研究，直至获得具有临床概念验证的分子，ALM将向华奥泰支付总额不超过3.4亿美元的首付款、开发和商业化里程碑付款，以及相应的分级特许权使用费。",
+      "primary_category": "other_review",
+      "secondary_tags": [],
+      "source_badges": [
+        "jin10"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": false
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_9deb8ca327039b0c",
+      "display_time": "16:27:19",
+      "headline": "金十数据3月27日讯，开创国际公告，2025年营业收入23.37亿元，同比增长0.90%。净利润7389.4万元，同比增长20.76%。公司拟以2025年12月31日总股本2.41亿股为基数，向全体股东每10股派发现金红利1元(含税)，共计派发现金红利2409.37万元。",
+      "primary_category": "other_review",
+      "secondary_tags": [],
+      "source_badges": [
+        "jin10"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": false
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_c62aafcd2590aec7",
+      "display_time": "16:27:41",
+      "headline": "小摩：全球石油系统正从“供应冲击转向库存枯竭” 大部分地区将在4月集中承压 财联社3月27日电，摩根大通分析师预测，由于美伊战争导致霍尔木兹海峡石油运输中断，全球石油系统正从“供应冲击转向库存枯竭”问题。小摩预计石油危机将按顺序冲击世界各地，从亚洲开始，经非洲，至欧洲，最终波及美国，大部分地区将在4月集中承压",
+      "primary_category": "macro_global",
+      "secondary_tags": [],
+      "source_badges": [
+        "cls"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": true
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_90ba1fbea50ed0a7",
+      "display_time": "16:27:44",
+      "headline": "下周央行公开市场将有4742亿元逆回购到期 财联社3月27日电，数据显示，下周央行公开市场将有4742亿元逆回购到期，其中下周一至下周五分别到期80亿元、175亿元、785亿元、2240亿元、1462亿元",
+      "primary_category": "liquidity",
+      "secondary_tags": [
+        "央行"
+      ],
+      "source_badges": [
+        "cls"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": true
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_22d0e8cff4e38246",
+      "display_time": "16:27:49",
+      "headline": "金十数据3月27日讯，*ST万方公告，截至2026年3月27日，公司股票收盘总市值已连续十个交易日均低于5亿元，若连续二十个交易日均低于5亿元，将被深交所终止上市，且不进入退市整理期。此外，公司预计2025年度营收不足3亿元且净利润为负，2025年度审计报告仍有被出具保留意见的风险，均可能触及财务类终止上市情形。公司还因涉嫌信披违法违规被立案调查，若触及重大违法强制退市情形，股票也可能被强制退市。",
+      "primary_category": "other_review",
+      "secondary_tags": [],
+      "source_badges": [
+        "jin10"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": false
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_ca34e767358049c8",
+      "display_time": "16:27:51",
+      "headline": "俄外长指责美将盟友推入火坑 财联社3月27日电，俄罗斯外长拉夫罗夫当地时间3月26日晚接受法国电视二台视频采访时表示，美国及其盟友对中东局势的每次干涉都使情况变得更加“严峻”。拉夫罗夫谴责美国政府高级官员大肆吹嘘对伊朗领导层成员的刺杀行动，称这种行为非常“冷血虚伪”。他指出，美国利用其设立在海湾地区阿拉伯国家的军事基地对伊朗发动袭击，却把大部分美军从军事基地撤出，此举背叛了这些盟友，将阿拉伯盟友们推进了火坑。 (CCTV国际时讯)",
+      "primary_category": "macro_global",
+      "secondary_tags": [
+        "地缘"
+      ],
+      "source_badges": [
+        "cls"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": true
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_487620c03f713b3b",
+      "display_time": "16:31:30",
+      "headline": "在岸人民币兑美元3月27日16:30收盘报6.9105，较上一交易日下跌64点。",
+      "primary_category": "fx_gold_commodities",
+      "secondary_tags": [],
+      "source_badges": [
+        "jin10"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": true
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_1eb784b85a16a1d5",
+      "display_time": "16:32:06",
+      "headline": "中国工商银行：2025年全年净利润3,685.6亿元 同比增长0.7% 财联社3月27日电，中国工商银行公告，2025年全年净利润3,685.6亿元，同比增长0.7%，市场预估3,682.5亿元；全年不良贷款率1.31％，预估1.33％",
+      "primary_category": "other_review",
+      "secondary_tags": [],
+      "source_badges": [
+        "cls"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": false
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_8c8c762acba52aef",
+      "display_time": "16:32:21",
+      "headline": "金十数据3月27日讯，迅策(03317.HK)公告，2025年收入12.85亿元，同比增长103.3%；毛利7.92亿元，同比增长63.4%。本年度亏损1.3亿元，母公司拥有人应占亏损9406.1万元。经调整净亏损5485万元。",
+      "primary_category": "other_review",
+      "secondary_tags": [],
+      "source_badges": [
+        "jin10"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": false
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_764af267f14dab2b",
+      "display_time": "16:32:41",
+      "headline": "伊朗外长阿拉格齐：我们的自卫行动将持续到必要时为止。",
+      "primary_category": "other_review",
+      "secondary_tags": [
+        "地缘"
+      ],
+      "source_badges": [
+        "jin10"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": false
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_a09e3df9d7c125d1",
+      "display_time": "16:33:30",
+      "headline": "工商银行(01398.HK)：2025年全年净利润3685.62亿元人民币，去年同期为3658.63亿元人民币。",
+      "primary_category": "other_review",
+      "secondary_tags": [],
+      "source_badges": [
+        "jin10"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": false
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_1c03e995e84b0f2f",
+      "display_time": "16:34:30",
+      "headline": "交通银行：2025年净利润956.22亿元",
+      "primary_category": "other_review",
+      "secondary_tags": [],
+      "source_badges": [
+        "jin10"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": false
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_397d4a0c0d9f1753",
+      "display_time": "16:34:34",
+      "headline": "交通银行：2025全年净利润956.2亿元 高于市场预期 财联社3月27日电，交通银行2025全年净利息收入1,730.8亿元，预估1,722.8亿元；净利润956.2亿元，预估945亿元；每股收益1.08元",
+      "primary_category": "other_review",
+      "secondary_tags": [],
+      "source_badges": [
+        "cls"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": false
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_caa3356dd0b77235",
+      "display_time": "16:35:47",
+      "headline": "金十数据3月27日讯，交通银行公告，2025年净经营收入2656亿元，信用减值损失545.47亿元，业务成本776.55亿元，税前利润1037.63亿元，净利润956.22亿元。",
+      "primary_category": "other_review",
+      "secondary_tags": [],
+      "source_badges": [
+        "jin10"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": false
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_9fb5f0e0b2941653",
+      "display_time": "16:36:08",
+      "headline": "金十数据3月27日讯，新华制药公告，2025年营业收入87.55亿元，同比增长3.41%；净利润2.9亿元，同比下降38.32%。",
+      "primary_category": "other_review",
+      "secondary_tags": [],
+      "source_badges": [
+        "jin10"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": false
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_82764002dbaf7255",
+      "display_time": "16:36:51",
+      "headline": "金十数据3月27日讯，国家外汇局数据显示，2026年2月，我国国际收支货物和服务贸易进出口规模39349亿元。其中，货物和服务贸易出口21476亿元，进口17873亿元，顺差3603亿元。服务贸易主要项目为：旅行服务进出口规模1596亿元，其他商业服务进出口规模1285亿元，运输服务进出口规模1033亿元，电信、计算机和信息服务进出口规模628亿元。",
+      "primary_category": "other_review",
+      "secondary_tags": [],
+      "source_badges": [
+        "jin10"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": false
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_cac67a61420b25fb",
+      "display_time": "16:37:14",
+      "headline": "国家外汇局：2026年2月，我国国际收支货物和服务贸易进出口规模39349亿元",
+      "primary_category": "other_review",
+      "secondary_tags": [],
+      "source_badges": [
+        "jin10"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": false
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_c154cd9fde3925bc",
+      "display_time": "16:37:18",
+      "headline": "全国产品数字护照标准化工作组正式成立",
+      "primary_category": "other_review",
+      "secondary_tags": [],
+      "source_badges": [
+        "jin10"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": false
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_e6c7cd3a97845ac9",
+      "display_time": "16:37:44",
+      "headline": "英国外交大臣：伊朗正在挟持全球经济。",
+      "primary_category": "other_review",
+      "secondary_tags": [
+        "地缘"
+      ],
+      "source_badges": [
+        "jin10"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": false
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_ff96dbb5b93d3d87",
+      "display_time": "16:38:15",
+      "headline": "16:35:38 【以军政要员称军队多线作战“濒临崩溃”】财联社3月27日电，以色列多名军政要员日前发出警告称，以军多线作战，已处于“崩溃边缘”，国家面临“安全灾难”。以色列反对党“拥有未来”党领导人亚伊尔·拉皮德26日发表电视讲话，指责总理内塔尼亚胡领导的政府迫使以色列国防军在兵力远远不够的情况下多线作战，甚至把“伤员直接抛弃在战场上”。他警告道，以军已“不堪重负”，以色列面临“安全灾难”。 (新华社)",
+      "primary_category": "policy",
+      "secondary_tags": [
+        "地缘"
+      ],
+      "source_badges": [
+        "cls"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": true
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_1e98b6f2119f4116",
+      "display_time": "16:38:27",
+      "headline": "港股德适-B(02526.HK)暗盘涨近100%，最高价触及208港元。",
+      "primary_category": "equity_a",
+      "secondary_tags": [],
+      "source_badges": [
+        "jin10"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
+      "publish_ready": true
+    },
+    {
+      "run_id": null,
+      "canonical_id": "can_04805157e938bbec",
+      "display_time": "16:38:46",
+      "headline": "金十数据3月27日讯，出版传媒公告，公司董事长张东平因工作岗位调整辞职，其辞职报告自送达董事会之日起生效。离任后，张东平将不在公司及子公司担任任何职务。公司第三届董事会第四十二次会议已通过，选举陈闯为新任董事长，任期与第三届董事会任期相同。",
+      "primary_category": "policy",
+      "secondary_tags": [],
+      "source_badges": [
+        "jin10"
+      ],
+      "source_count": 1,
+      "importance": "normal",
+      "market_impact_hint": "review",
       "publish_ready": true
     }
   ],
-  "fun_fact": {
-    "title": "🧠 每日冷知识",
-    "content": "你知道吗？世界上第一只指数基金是由约翰·博格在1976年创立的，当时被华尔街嘲笑为'博格的愚蠢'。如今，低成本的被动投资已成为全球资产管理行业的主流，管理的资产超过17万亿美元。"
-  },
-  "selected_articles": [
-    {
-      "title": "美联储降息路径推演：三季度或是关键窗口",
-      "source": "华尔街见闻",
-      "url": "#"
-    },
-    {
-      "title": "深度：城投债化解的下半场",
-      "source": "固收分析师",
-      "url": "#"
-    }
-  ]
+  "fun_fact": null,
+  "selected_articles": []
 }
