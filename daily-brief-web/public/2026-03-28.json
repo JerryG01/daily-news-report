@@ -1,0 +1,14 @@
+{
+  "status": {
+    "run_status": "success",
+    "publish_state": "published",
+    "severity": "ok",
+    "header_template": "[success] 双源发布（jin10 / cls）",
+    "disclosure": "双源发布（jin10 / cls）",
+    "sources_success": ["jin10", "cls"],
+    "sources_failed": []
+  },
+  "events": [],
+  "fun_fact": null,
+  "selected_articles": []
+}
