@@ -1,1 +1,18 @@
-{"reports": [{"date": "20260327", "type": "afternoon", "file": "daily_brief_20260327_afternoon.html"}], "fun_facts": [], "articles": [], "generated": "2026-03-27T10:03:47Z"}
+{
+  "reports": [
+    {
+      "date": "20260327",
+      "type": "afternoon",
+      "file": "daily_brief_20260327_afternoon.html"
+    }
+  ],
+  "fun_facts": [
+    {
+      "date": "20260331",
+      "type": "fun_fact",
+      "file": "fun_fact_20260331.html"
+    }
+  ],
+  "articles": [],
+  "generated": "2026-03-31T10:03:16Z"
+}

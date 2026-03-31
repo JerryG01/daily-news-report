@@ -5,9 +5,9 @@
 set -euo pipefail
 
 BASE_DIR="$(cd "$(dirname "$0")" && pwd)"
-INDEX_HTML="$HOME/.openclaw/workspace-news_reporter/sync/index.html"
-REPORTS_DIR="$HOME/.openclaw/workspace-news_reporter/reports"
-INDEX_JSON="$HOME/.openclaw/workspace-news_reporter/sync/reports/index.json"
+INDEX_HTML="$HOME/.openclaw/projects/daily-news-report/index.html"
+REPORTS_DIR="$HOME/.openclaw/projects/daily-news-report/sync/reports"
+INDEX_JSON="$HOME/.openclaw/projects/daily-news-report/sync/reports/index.json"
 CRON_JOBS="$HOME/.openclaw/cron/jobs.json"
 COACH_REPORTS_DIR="$HOME/.openclaw/workspace-coach/reports"
 TODAY="${1:-$(date +%Y%m%d)}"

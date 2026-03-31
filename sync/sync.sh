@@ -14,7 +14,7 @@
 set -euo pipefail
 
 REPORTS_DIR="$HOME/.openclaw/workspace-news_reporter/reports"
-SYNC_DIR="$HOME/.openclaw/workspace-news_reporter/sync"
+SYNC_DIR="$HOME/.openclaw/projects/daily-news-report/sync"
 COACH_REPORTS_DIR="$HOME/.openclaw/workspace-coach/reports"
 TODAY=$(date +%Y%m%d)
 SYNC_REPORTS_DIR="$SYNC_DIR/reports"
@@ -210,7 +210,7 @@ bash "$SYNC_DIR/qa_check.sh" "$TODAY"
 
 # ── 5. Git 推送 ─────────────────────────────────────────
 cd "$SYNC_DIR"
-git add reports index.html sync.sh qa_check.sh DEPLOYMENT.md
+git add reports/ ../index.html sync/sync.sh sync/qa_check.sh
 
 git diff --cached --quiet && {
   echo "[sync] no changes to commit"
