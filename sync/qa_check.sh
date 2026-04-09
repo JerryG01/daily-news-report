@@ -113,4 +113,4 @@ else:
     print('  - note: MUST live-verify again at next 12:30 run')
 PY
 
-echo "== done =="e =="
+echo "== done =="
