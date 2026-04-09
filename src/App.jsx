@@ -1,32 +1,88 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Loader2 } from 'lucide-react';
 
+// Helper: 返回今日日期字符串 YYYY-MM-DD
+const getTodayStr = () => {
+  const now = new Date();
+  const yyyy = now.getFullYear();
+  const mm = String(now.getMonth() + 1).padStart(2, '0');
+  const dd = String(now.getDate()).padStart(2, '0');
+  return `${yyyy}-${mm}-${dd}`;
+};
+
+// Helper: 返回最近 N 天的日期列表（降序），用于回退查找
+const getRecentDates = (n = 7) => {
+  const dates = [];
+  const now = new Date();
+  for (let i = 0; i < n; i++) {
+    const d = new Date(now);
+    d.setDate(d.getDate() - i);
+    const yyyy = d.getFullYear();
+    const mm = String(d.getMonth() + 1).padStart(2, '0');
+    const dd = String(d.getDate()).padStart(2, '0');
+    dates.push(`${yyyy}-${mm}-${dd}`);
+  }
+  return dates;
+};
+
 function App() {
-  const [currentDate, setCurrentDate] = useState('2026-03-27');
+  const [currentDate, setCurrentDate] = useState(getTodayStr);
   const [dailyData, setDailyData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
   const [activeTab, setActiveTab] = useState('brief');
+  // 标记首次加载：用于今日数据缺失时自动回退到最近可用日期
+  const isInitialMount = useRef(true);
 
   useEffect(() => {
+    let cancelled = false;
     setIsLoading(true);
     setError(null);
-    fetch(`/${currentDate}.json`)
-      .then((response) => {
-        if (!response.ok) throw new Error('今日报纸尚未发行，请查阅其他日期。');
-        return response.json();
-      })
-      .then((data) => {
-        setDailyData(data);
-        setIsLoading(false);
-      })
-      .catch((err) => {
-        setError(err.message);
-        setIsLoading(false);
-      });
+
+    const doFetch = (date) => {
+      fetch(`/${date}.json`)
+        .then((response) => {
+          if (!response.ok) {
+            if (response.status === 404 && isInitialMount.current) {
+              // 今日数据不存在：自动回退查找最近可用日期
+              const recentDates = getRecentDates(14); // 最多回查 14 天
+              return Promise.reject({ fallback: true, recentDates });
+            }
+            throw new Error('今日报纸尚未发行，请查阅其他日期。');
+          }
+          return response.json();
+        })
+        .then((data) => {
+          if (cancelled) return;
+          setDailyData(data);
+          setIsLoading(false);
+          isInitialMount.current = false;
+        })
+        .catch((err) => {
+          if (cancelled) return;
+          if (err.fallback && err.recentDates) {
+            // 递归查找最近可用日期
+            const next = err.recentDates.slice(1);
+            if (next.length === 0) {
+              setError('无可用简报数据，请检查数据管道。');
+              setIsLoading(false);
+              return;
+            }
+            // 找到后更新 currentDate（触发后续 useEffect）
+            setCurrentDate(next[0]);
+          } else {
+            setError(err.message);
+            setIsLoading(false);
+          }
+        });
+    };
+
+    doFetch(currentDate);
+    return () => { cancelled = true; };
   }, [currentDate]);
 
   const handleDateChange = (e) => {
+    isInitialMount.current = false; // 用户手动选择后关闭自动回退
     setCurrentDate(e.target.value);
   };
 

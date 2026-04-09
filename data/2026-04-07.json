@@ -1,0 +1,10 @@
+{
+  "status": {
+    "run_status": "done",
+    "data_source": "jin10.com",
+    "fetch_status": "blocked_internal_ip",
+    "degraded": true,
+    "note": "web_fetch blocked by internal IP policy; no new jin10 real-time data available. Brief based on previous trading day (2026-04-06) content. All events are carryovers with no new intraday developments."
+  },
+  "events": []
+}

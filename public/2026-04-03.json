@@ -1,0 +1,203 @@
+{
+  "status": {
+    "run_status": "done",
+    "data_source": "Tavily web_search (jin10.com web_fetch blocked)",
+    "report_type": "afternoon",
+    "date": "2026-04-03",
+    "generated_at": "2026-04-03T17:30:00+08:00",
+    "degraded": true
+  },
+  "events": [
+    {
+      "primary_category": "宏观",
+      "display_time": "2026-04-02",
+      "headline": "特朗普签署钢铁/铝关税调整行政令：维持大宗商品50%进口关税，取消金属含量低于15%的衍生产品50%关税，简化申报流程",
+      "source_badges": [
+        "白宫声明"
+      ]
+    },
+    {
+      "primary_category": "宏观",
+      "display_time": "2026-04-03",
+      "headline": "美银警告：百元油价将贯穿全年，美联储降息存泡汤风险——即便冲突在几周内平息，每桶100美元的高油价也将贯穿2026，并给全球带来经济放缓与通胀高企的双重打击",
+      "source_badges": [
+        "美国银行"
+      ]
+    },
+    {
+      "primary_category": "宏观",
+      "display_time": "2026-04-03",
+      "headline": "贝森特紧盯的美债遭遇重挫，特朗普的降息梦被伊朗战争击碎",
+      "source_badges": [
+        "华尔街见闻"
+      ]
+    },
+    {
+      "primary_category": "地缘",
+      "display_time": "2026-04-02",
+      "headline": "伊朗军队总司令哈塔米：若敌军企图发动地面进攻，敌方士兵将无人存活；革命卫队：将扩大目标范围，加速驱逐美国在地区的存在",
+      "source_badges": [
+        "IRNA",
+        "塔斯尼姆通讯社"
+      ]
+    },
+    {
+      "primary_category": "地缘",
+      "display_time": "2026-04-02",
+      "headline": "伊朗最高领袖外事顾问韦拉亚提：霍尔木兹海峡对世界开放，但对敌人及其据点将永远关闭；伊朗副外长：正与阿曼起草霍尔木兹海峡通行协议",
+      "source_badges": [
+        "IRNA",
+        "CCTV国际时讯"
+      ]
+    },
+    {
+      "primary_category": "宏观",
+      "display_time": "2026-04-02",
+      "headline": "王毅应约同沙特外交大臣费萨尔通电话，费萨尔称伊朗战事给地区和世界各国造成严重影响，沙方希同中方共同推动战事降温",
+      "source_badges": [
+        "新华社"
+      ]
+    },
+    {
+      "primary_category": "地缘",
+      "display_time": "2026-04-02",
+      "headline": "伊朗封锁霍尔木兹海峡已超一个月，海湾国家正重新审视耗资巨大的管道计划以绕过这一咽喉要道，但短期无法替代海峡运能",
+      "source_badges": [
+        "金融时报"
+      ]
+    },
+    {
+      "primary_category": "宏观",
+      "display_time": "2026-04-02",
+      "headline": "欧盟能源专员警告：准备应对能源冲击长期化，燃料配给、储备释放均在考量——欧盟严肃预警中东能源冲击持续化",
+      "source_badges": [
+        "欧盟能源专员"
+      ]
+    },
+    {
+      "primary_category": "能源",
+      "display_time": "2026-04-02",
+      "headline": "三位业内消息人士：乌克兰对港口基础设施、管道和炼油厂的打击削弱俄罗斯出口能力约100万桶/日，约占总能力的五分之一，俄罗斯石油减产已迫在眉睫",
+      "source_badges": [
+        "路透社"
+      ]
+    },
+    {
+      "primary_category": "期货",
+      "display_time": "2026-04-02 收盘",
+      "headline": "美油主力合约暴涨11.93%，报112.06美元/桶；布油主力合约涨7.99%，报109.24美元/桶——霍尔木兹海峡供应被切断，市场对冲突快速缓和的预期被打碎",
+      "source_badges": [
+        "金十数据"
+      ]
+    },
+    {
+      "primary_category": "贵金属",
+      "display_time": "2026-04-02 收盘",
+      "headline": "COMEX黄金期货跌2.29%报4702.70美元/盎司；白银期货跌3.82%报73.17美元/盎司——地缘冲突未如预期降温，避险逻辑生变，美元与美债收益率上升引发抛售",
+      "source_badges": [
+        "金十数据"
+      ]
+    },
+    {
+      "primary_category": "期货",
+      "display_time": "2026-04-02 收盘",
+      "headline": "伦敦基本金属全线下跌：LME期铅-0.36%、镍-0.63%、铜-0.69%、锌-1.00%、铝-1.87%、锡-1.93%",
+      "source_badges": [
+        "金十数据"
+      ]
+    },
+    {
+      "primary_category": "期货",
+      "display_time": "2026-04-02 23:00 收盘",
+      "headline": "国内期货夜盘：燃料油涨超3%，低硫燃料油（LU）涨超2%，甲醇涨超1%；沥青跌超2%，对二甲苯跌超1%",
+      "source_badges": [
+        "金十数据"
+      ]
+    },
+    {
+      "primary_category": "期货",
+      "display_time": "2026-04-03 生效",
+      "headline": "芝商所（CME）近一个月内第三次上调贵金属期货保证金，上调部分铝期货合约保证金要求至5000美元/手，新规于4月3日收盘后生效",
+      "source_badges": [
+        "CME"
+      ]
+    },
+    {
+      "primary_category": "期货",
+      "display_time": "周日（4月5日）",
+      "headline": "两位OPEC+消息人士：8个成员国会议上可能考虑进一步提高石油产量，使主要产油国在霍尔木兹海峡重新开放后能迅速增加供应——增产vs地缘断供形成对冲",
+      "source_badges": [
+        "路透社"
+      ]
+    },
+    {
+      "primary_category": "宏观",
+      "display_time": "2026-04-02",
+      "headline": "特朗普全国电视讲话详述史诗愤怒行动军事战果，称我们不需要来自中东的石油，美国国内汽油价格上涨是短期现象",
+      "source_badges": [
+        "白宫",
+        "路透社"
+      ]
+    },
+    {
+      "primary_category": "宏观",
+      "display_time": "2026-04-02",
+      "headline": "英国伍德麦肯兹：阿联酋环球铝业（EGA）阿尔塔维拉冶炼厂已暂停运营；巴林铝业冶炼设施此前遭袭受严重损失，若霍尔木兹海峡迟迟无法恢复通航，2026年全球铝市场可能出现明显供需缺口",
+      "source_badges": [
+        "央视财经",
+        "路透社",
+        "伍德麦肯兹"
+      ]
+    },
+    {
+      "primary_category": "宏观",
+      "display_time": "2026-04-03",
+      "headline": "Mysteel调研：本周螺纹产量207.1万吨（环比+4.66%），表需228.26万吨（环比+1.28%），总库存840.75万吨（去库21.16万吨）——螺纹钢供需双旺，去库顺畅",
+      "source_badges": [
+        "Mysteel"
+      ]
+    },
+    {
+      "primary_category": "宏观",
+      "display_time": "2026-04-03",
+      "headline": "印尼3月镍湿法中间品产量3.25万金属吨，环比-16.56%，同比-14.26%——镍供应扰动持续，利好镍价",
+      "source_badges": [
+        "Mysteel"
+      ]
+    },
+    {
+      "primary_category": "资金面",
+      "display_time": "2026-04-03",
+      "headline": "央行公布2026年3月各工具流动性投放：MLF净投放500亿元；7天期逆回购净回笼8903亿元；公开国债买卖净投放500亿元——3月整体流动性净回笼为主",
+      "source_badges": [
+        "中国人民银行"
+      ]
+    },
+    {
+      "primary_category": "资金面",
+      "display_time": "2026-04-02",
+      "headline": "A股主力资金流向：中超控股获主力资金净流入12.35亿元居首，其次中利集团10.46亿元、新能泰山5.15亿元、亨通光电3.98亿元",
+      "source_badges": [
+        "金十数据"
+      ]
+    },
+    {
+      "primary_category": "宏观",
+      "display_time": "2026-04-02 美股收盘",
+      "headline": "美股三大指数集体收涨：纳指+1.16%，道指+0.48%，标普500+0.72%——存储/铝业股领涨；西部数据涨超10%，美光科技、英特尔涨超8%",
+      "source_badges": [
+        "东方财富"
+      ]
+    },
+    {
+      "primary_category": "宏观",
+      "display_time": "2026-04-03 亚洲开盘",
+      "headline": "日经225指数期货+1.44%；恒指期货+0.94%（24,926点）；欧洲主要指数期货普遍上涨0.6-1.0%——亚洲市场对特朗普关税调整反应积极",
+      "source_badges": [
+        "英为财情"
+      ]
+    }
+  ],
+  "fun_fact": null,
+  "selected_articles": []
+}

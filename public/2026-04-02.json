@@ -1,0 +1,154 @@
+{
+  "status": {
+    "run_status": "done",
+    "data_source_note": "jin10.com / wallstreetcn.com / eastmoney.com 均被web_fetch拦截（内部IP策略），数据源降级为 Tavily web_search；金十快讯无法实时抓取；本文件为降级版，聚焦盘后有效事件，剔除纯重复项"
+  },
+  "events": [
+    {
+      "primary_category": "海外宏观",
+      "display_time": "2026-04-02",
+      "headline": "美国3月ADP就业人数增加6.2万人，高于市场预期4万人，劳动力市场保持韧性",
+      "source_badges": [
+        "金十数据（via Tavily搜索）"
+      ]
+    },
+    {
+      "primary_category": "海外宏观",
+      "display_time": "2026-04-02",
+      "headline": "美国3月ISM制造业PMI录得52.7，为2022年8月以来新高；1月商业库存月率-0.1%为2024年12月以来最大降幅",
+      "source_badges": [
+        "金十数据（via Tavily搜索）"
+      ]
+    },
+    {
+      "primary_category": "海外宏观",
+      "display_time": "2026-04-02",
+      "headline": "特朗普预计将全面调整钢铁和铝关税（简化成品关税合规）；另称正认真考虑让美国退出北约",
+      "source_badges": [
+        "华尔街日报（via Tavily搜索）"
+      ]
+    },
+    {
+      "primary_category": "地缘",
+      "display_time": "2026-04-02",
+      "headline": "伊朗拒绝谈判：最高领导人未下达任何谈判许可，霍尔木兹海峡局势牢牢掌握在革命卫队手中",
+      "source_badges": [
+        "半岛电视台（via Tavily搜索）"
+      ]
+    },
+    {
+      "primary_category": "地缘",
+      "display_time": "2026-04-02",
+      "headline": "阿联酋环球铝业（EGA）阿布扎比阿尔塔维拉冶炼厂遭伊朗导弹和无人机袭击后已暂停运营，正在出售大量氧化铝",
+      "source_badges": [
+        "金十数据（via Tavily搜索）"
+      ]
+    },
+    {
+      "primary_category": "地缘",
+      "display_time": "2026-04-02",
+      "headline": "俄军被曝正撤出乌克兰重镇，美国\"放手\"下俄乌恐再陷拉锯战；欧盟拟重启\"俄乌危机级\"能源工具应对伊朗战争冲击",
+      "source_badges": [
+        "金十数据（via Tavily搜索）"
+      ]
+    },
+    {
+      "primary_category": "大宗商品",
+      "display_time": "2026-04-01 收盘",
+      "headline": "美油主力合约收跌2.44%报98.91美元/桶；布油主力合约跌3.59%报100.24美元/桶",
+      "source_badges": [
+        "金十数据（via Tavily搜索）"
+      ]
+    },
+    {
+      "primary_category": "大宗商品",
+      "display_time": "2026-04-01 收盘",
+      "headline": "伦敦基本金属全线上涨：LME期铅+1.89%、锌+1.77%、铝+1.75%、锡+1.50%、铜+1.11%、镍+1.02%",
+      "source_badges": [
+        "金十数据（via Tavily搜索）"
+      ]
+    },
+    {
+      "primary_category": "大宗商品",
+      "display_time": "2026-04-01 夜盘",
+      "headline": "国内期货主力合约大面积飘绿：乙二醇、低硫燃料油跌超4%，BR橡胶、苯乙烯、纯苯、燃料油跌超3%",
+      "source_badges": [
+        "金十数据（via Tavily搜索）"
+      ]
+    },
+    {
+      "primary_category": "期货",
+      "display_time": "2026-04-03 起",
+      "headline": "广期所：多晶硅期货手续费调整为万分之二点五；非期货公司会员在PS2606-PS2703合约单日开仓量不得超过200手；保证金标准调整为13%",
+      "source_badges": [
+        "广期所公告（via Tavily搜索）"
+      ]
+    },
+    {
+      "primary_category": "期货",
+      "display_time": "2026-04-02",
+      "headline": "国内某多晶硅厂家新疆基地因检修暂定4月底全部停车，预计时长2-3个月",
+      "source_badges": [
+        "SMM（via Tavily搜索）"
+      ]
+    },
+    {
+      "primary_category": "农产品",
+      "display_time": "2026-04-02",
+      "headline": "国家发改委：近期将开展今年第二批中央冻猪肉储备收储工作，要求各地同步收储",
+      "source_badges": [
+        "国家发改委（via Tavily搜索）"
+      ]
+    },
+    {
+      "primary_category": "农产品",
+      "display_time": "2026-04-01",
+      "headline": "USDA：美国2026年2月大豆压榨量643万短吨，与预期一致；StoneX上调巴西2025/26年度大豆产量预估1%至1.797亿吨",
+      "source_badges": [
+        "USDA、StoneX（via Tavily搜索）"
+      ]
+    },
+    {
+      "primary_category": "资金面",
+      "display_time": "2026-04-02 10:40",
+      "headline": "A股主力资金净流入前三：中超控股12.35亿元、中利集团10.46亿元、新能泰山5.15亿元",
+      "source_badges": [
+        "金十数据（via Tavily搜索）"
+      ]
+    },
+    {
+      "primary_category": "新能源 / 金属",
+      "display_time": "2026-04-02",
+      "headline": "崔东树：2026年1-2月锂电池出口达142亿美元，同比增长46%；主要出口市场为欧盟（占比约43%）",
+      "source_badges": [
+        "崔东树（via Tavily搜索）"
+      ]
+    },
+    {
+      "primary_category": "期货",
+      "display_time": "2026-04-01",
+      "headline": "大秦铁路4月1日起开展为期30天春季集中修施工，确保日运量100万吨，为迎峰度夏能源运输奠定基础",
+      "source_badges": [
+        "央视新闻（via Tavily搜索）"
+      ]
+    },
+    {
+      "primary_category": "A股公司",
+      "display_time": "2026-04-02",
+      "headline": "宁德时代：控股股东厦门瑞庭投资拟向上海交通大学教育发展基金会捐赠500万股A股，占总股本0.11%，用于曾毓群教育基金",
+      "source_badges": [
+        "宁德时代公告（via Tavily搜索）"
+      ]
+    },
+    {
+      "primary_category": "A股公司",
+      "display_time": "2026-04-02",
+      "headline": "盛屯矿业：预计2026年Q1净利润同比增长226.27%至294.95%，有色金属景气延续",
+      "source_badges": [
+        "盛屯矿业公告（via Tavily搜索）"
+      ]
+    }
+  ],
+  "fun_fact": null,
+  "selected_articles": []
+}

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>盘前简报 — Jerry 2026-04-03</title>
+  <style>
+    body { background: #0d1117; color: #e6edf3; font-family: -apple-system, sans-serif; padding: 16px; max-width: 900px; }
+    .header { font-size: 13px; color: #8b949e; border-bottom: 1px solid #30363d; padding-bottom: 8px; margin-bottom: 16px; }
+    .signal { background: #1f6feb22; border: 1px solid #1f6feb44; border-radius: 6px; padding: 12px; margin-bottom: 16px; }
+    .signal-label { font-size: 10px; color: #58a6ff; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .signal-text { font-size: 14px; color: #e6edf3; line-height: 1.5; }
+    .tag { display: inline-block; padding: 1px 6px; border-radius: 4px; font-size: 10px; font-weight: bold; margin-right: 4px; }
+    .tag-外汇 { background: #1f6feb22; color: #58a6ff; }
+    .tag-债券 { background: #23863622; color: #3fb950; }
+    .tag-期货 { background: #d2992222; color: #e3b341; }
+    .tag-宏观 { background: #f8514922; color: #ff7b72; }
+    .tag-资金面 { background: #a371f722; color: #bc8cff; }
+    .tag-地缘 { background: #f0883e22; color: #f0883e; }
+    .tag-贵金属 { background: #d2992222; color: #e3b341; }
+    .item { margin-bottom: 10px; line-height: 1.5; font-size: 12.5px; padding-bottom: 10px; border-bottom: 1px solid #21262d; }
+    .item:last-child { border-bottom: none; }
+    .time { color: #8b949e; font-size: 10px; margin-right: 6px; font-family: monospace; }
+    .source { color: #484f58; font-size: 10px; }
+    .section-title { font-size: 11px; color: #8b949e; text-transform: uppercase; letter-spacing: 0.05em; margin: 16px 0 8px; }
+    .degraded { background: #d2992222; color: #e3b341; font-size: 11px; padding: 6px 10px; border-radius: 4px; margin-bottom: 12px; }
+    .holiday { background: #23863622; color: #3fb950; font-size: 11px; padding: 6px 10px; border-radius: 4px; margin-bottom: 12px; }
+    .new-mark { color: #3fb950; font-size: 10px; font-weight: bold; margin-left: 4px; }
+    .dup-mark { color: #8b949e; font-size: 10px; font-weight: bold; margin-left: 4px; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    盘前简报 | 2026-04-03 09:00 | 金十数据（web_fetch受阻，降级为Tavily搜索） | partial/degraded
+  </div>
+
+  <div class="degraded">
+    ⚠ 数据源降级说明：jin10.com 被web_fetch拦截（内部IP策略），本简报以Tavily web_search为替代源，
+    覆盖清明+复活节假期背景下的精选快讯，非全量快讯。
+  </div>
+
+  <div class="holiday">
+    🏮 今日假期提示（4月3日）：清明节✕复活节重叠，多地市场休市。CME贵金属+美油期货全天停牌；
+    ICE布油全天停牌；上金所/上期所/郑商所/大商所夜盘休市；A股/港股休市至4月7日（周二）。
+    美股美债美股期美指期货提前收市；美股4月6日（周一）正常开市。
+  </div>
+
+  <div class="signal">
+    <div class="signal-label">⚡ 今日单一最重要信号</div>
+    <div class="signal-text">
+      特朗普签署钢铁/铝关税调整行政令（简化金属衍生品合规流程，取消低于15%金属含量产品的50%关税）
+      + 伊朗军队总司令哈塔米警告"地面战无人存活" →
+      地缘供给冲击定价再度升温，美油昨夜暴涨11.93%至112美元；
+      然OPEC+周日会议可能宣布增产（8个成员国讨论），供应博弈进入关键窗口；
+      今日A股/港股/国内期货均休市，现阶段以持仓+外盘避险为主。
+    </div>
+  </div>
+
+  <div class="section-title">🌍 海外宏观 / 地缘</div>
+
+  <div class="item">
+    <span class="tag tag-宏观">宏观</span>
+    <span class="time">2026-04-03</span>
+    特朗普于当地时间4月2日签署声明，调整钢铁、铝和铜进口国家安全关税：对大宗商品（钢铁/铝/铜）维持50%进口关税，但税率适用于消费者支付价格；同时取消金属含量低于15%的衍生产品50%关税，简化申报流程——白宫称之为"降低合规成本"，实质是对前期过高税率的补丁
+    <span class="source">来源: 白宫声明（via Tavily搜索）</span>
+    <span class="new-mark">📍 进展</span>
+  </div>
+
+  <div class="item">
+    <span class="tag tag-地缘">地缘</span>
+    <span class="time">2026-04-02</span>
+    伊朗军队总司令哈塔米：若敌军企图发动地面进攻，敌方士兵将无人存活；伊朗革命卫队海军指挥部：将扩大目标范围，加速驱逐美国在地区的存在；伊朗军事发言人：更大、更广泛、破坏性更强的攻击即将来临，战争将持续至"敌人投降并感到永久悔恨"
+    <span class="source">来源: IRNA/塔斯尼姆通讯社（via Tavily搜索）</span>
+    <span class="new-mark">📍 进展</span>
+  </div>
+
+  <div class="item">
+    <span class="tag tag-地缘">地缘</span>
+    <span class="time">2026-04-02</span>
+    伊朗最高领袖外事顾问韦拉亚提：霍尔木兹海峡对世界开放，但对伊朗人民的敌人及其在该地区的据点将永远关闭；另据IRNA：伊朗副外长Gharibabadi称，伊朗正与阿曼起草霍尔木兹海峡通行协议（与阿曼的协议不构成通行限制，意在分化美方）
+    <span class="source">来源: IRNA/CCTV国际时讯（via Tavily搜索）</span>
+    <span class="new-mark">📍 进展</span>
+  </div>
+
+  <div class="item">
+    <span class="tag tag-宏观">宏观</span>
+    <span class="time">2026-04-02</span>
+    王毅应约同沙特外交大臣费萨尔通电话，费萨尔称伊朗战事给地区和世界各国造成严重影响，沙方重视中方在国际事务中的作用，希同中方共同推动战事降温——中沙协调是中国在中东危机中持续发声的最新信号
+    <span class="source">来源: 新华社（via Tavily搜索）</span>
+    <span class="new-mark">📍 进展</span>
+  </div>
+
+  <div class="item">
+    <span class="tag tag-宏观">宏观</span>
+    <span class="time">2026-04-02</span>
+    伊朗封锁霍尔木兹海峡已超一个月，海湾国家正重新审视耗资巨大的管道计划以绕过这一咽喉要道（英国金融时报），但成本高昂、政治复杂、耗时数年，短期无法替代海峡运能
+    <span class="source">来源: 金融时报（via Tavily搜索）</span>
+    <span class="new-mark">📍 进展</span>
+  </div>
+
+  <div class="section-title">📊 期货 / 大宗商品</div>
+
+  <div class="item">
+    <span class="tag tag-期货">期货</span>
+    <span class="time">2026-04-02 收盘</span>
+    美油主力合约暴涨11.93%，报112.06美元/桶；布油主力合约涨7.99%，报109.24美元/桶——霍尔木兹海峡供应被切断叠加特朗普威胁升级对伊战事，市场对冲突快速缓和的预期被打碎，供应收缩担忧大幅升温
+    <span class="source">来源: 金十数据（via Tavily搜索）</span>
+    <span class="new-mark">📍 进展</span>
+  </div>
+
+  <div class="item">
+    <span class="tag tag-贵金属">贵金属</span>
+    <span class="time">2026-04-02 收盘</span>
+    COMEX黄金期货跌2.29%报4702.70美元/盎司；白银期货跌3.82%报73.17美元/盎司——地缘政治冲突未如预期降温，避险逻辑生变；美元与美债收益率上升提升贵金属持有成本，引发抛售
+    <span class="source">来源: 金十数据（via Tavily搜索）</span>
+    <span class="new-mark">📍 进展</span>
+  </div>
+
+  <div class="item">
+    <span class="tag tag-期货">期货</span>
+    <span class="time">2026-04-02 收盘</span>
+    伦敦基本金属全线下跌：LME期铅-0.36%、镍-0.63%、铜-0.69%、锌-1.00%、铝-1.87%、锡-1.93%
+    <span class="source">来源: 金十数据（via Tavily搜索）</span>
+    <span class="new-mark">📍 进展</span>
+  </div>
+
+  <div class="item">
+    <span class="tag tag-期货">期货</span>
+    <span class="time">2026-04-02 23:00 收盘</span>
+    国内期货夜盘（清明节前最后夜盘）：燃料油涨超3%，低硫燃料油（LU）涨超2%，甲醇涨超1%；沥青跌超2%，对二甲苯跌超1%，玻璃、塑料、焦炭、铁矿石、菜粕小幅下跌
+    <span class="source">来源: 金十数据（via Tavily搜索）</span>
+    <span class="new-mark">📍 进展</span>
+  </div>
+
+  <div class="item">
+    <span class="tag tag-期货">期货</span>
+    <span class="time">2026-04-03 生效</span>
+    芝商所（CME）上调部分铝期货合约保证金要求至5000美元/手，新规于4月3日收盘后生效——反映铝市波动性加剧
+    <span class="source">来源: CME（via Tavily搜索）</span>
+    <span class="new-mark">📍 新增</span>
+  </div>
+
+  <div class="item">
+    <span class="tag tag-宏观">宏观</span>
+    <span class="time">周日（4月5日）</span>
+    两位OPEC+消息人士：8个成员国会议上可能考虑进一步提高石油产量，使主要产油国在霍尔木兹海峡重新开放后能迅速增加供应——增产vs地缘断供形成对冲，油价短期高度不确定
+    <span class="source">来源: 路透社（via Tavily搜索）</span>
+    <span class="new-mark">📍 新增</span>
+  </div>
+
+  <div class="section-title">🇨🇳 国内宏观 / 资金面</div>
+
+  <div class="item">
+    <span class="tag tag-资金面">资金面</span>
+    <span class="time">2026-04-03</span>
+    央行公布2026年3月各工具流动性投放：MLF净投放500亿元；7天期逆回购净回笼8903亿元；公开国债买卖净投放500亿元——3月整体流动性净回笼为主，4月资金面面临税期+假期压力
+    <span class="source">来源: 中国人民银行（via Tavily搜索）</span>
+    <span class="new-mark">📍 进展</span>
+  </div>
+
+  <div class="item">
+    <span class="tag tag-资金面">资金面</span>
+    <span class="time">2026-04-02</span>
+    A股主力资金流向4月2日：中高控股获主力资金净流入12.35亿元居首，其次中利集团10.46亿元、新能泰山5.15亿元、亨通光电3.98亿元（节前最后一个交易日）
+    <span class="source">来源: 金十数据（via Tavily搜索）</span>
+    <span class="dup-mark">📌 重复（4月2日盘后已有）</span>
+  </div>
+
+  <div class="item">
+    <span class="tag tag-宏观">宏观</span>
+    <span class="time">2026-04-02</span>
+    商务部、国家发展改革委、财政部正在开展今年第二批中央冻猪肉储备收储工作，维护猪肉市场平稳运行（此前盘后简报已覆盖，本日为执行进展）
+    <span class="source">来源: 国家发改委（via Tavily搜索）</span>
+    <span class="dup-mark">📌 重复（盘后简报已有）</span>
+  </div>
+
+  <div class="section-title">🔋 新能源 / 金属</div>
+
+  <div class="item">
+    <span class="tag tag-宏观">宏观</span>
+    <span class="time">2026-04-02</span>
+    英国伍德麦肯兹：阿联酋环球铝业（EGA）阿尔塔维拉冶炼厂已暂停运营；巴林铝业冶炼设施此前遭袭受严重损失——海湾两家铝厂受袭持续影响全球铝市场，若霍尔木兹海峡迟迟无法恢复通航，2026年全球铝市场可能出现明显供需缺口
+    <span class="source">来源: 央视财经/路透社（via Tavily搜索）</span>
+    <span class="new-mark">📍 进展</span>
+  </div>
+
+  <div class="item">
+    <span class="tag tag-宏观">宏观</span>
+    <span class="time">2026-04-02</span>
+    Mysteel调研：本周螺纹产量207.1万吨（环比+4.66%），表需228.26万吨（环比+1.28%），总库存840.75万吨（去库21.16万吨）——螺纹钢供需双旺，去库顺畅
+    <span class="source">来源: Mysteel（via Tavily搜索）</span>
+    <span class="new-mark">📍 新增</span>
+  </div>
+
+  <div class="item">
+    <span class="tag tag-宏观">宏观</span>
+    <span class="time">2026-04-02</span>
+    印尼3月镍湿法中间品产量3.25万金属吨，环比-16.56%，同比-14.26%——镍供应扰动持续，利好镍价
+    <span class="source">来源: Mysteel（via Tavily搜索）</span>
+    <span class="new-mark">📍 新增</span>
+  </div>
+
+  <div class="section-title">🌏 全球金融市场</div>
+
+  <div class="item">
+    <span class="tag tag-宏观">宏观</span>
+    <span class="time">2026-04-02 美股收盘</span>
+    美股三大指数集体收涨：纳指+1.16%，道指+0.48%，标普500+0.72%——存储/铝业股领涨；西部数据涨超10%，美光科技、英特尔涨超8%，美国铝业、世纪铝业大涨
+    <span class="source">来源: 东方财富（via Tavily搜索）</span>
+    <span class="new-mark">📍 进展</span>
+  </div>
+
+  <div class="item">
+    <span class="tag tag-宏观">宏观</span>
+    <span class="time">2026-04-03 亚洲开盘</span>
+    日经225指数期货+1.44%；恒指期货+0.94%（24,926点）；欧洲主要指数期货普遍上涨0.6-1.0%——亚洲市场对特朗普关税调整反应积极，预期供应链扰动缓解
+    <span class="source">来源: 英为财情（via Tavily搜索）</span>
+    <span class="new-mark">📍 新增</span>
+  </div>
+
+  <div class="section-title">📍 今日快讯去重报告（jin10-dedup降级执行）</div>
+
+  <div class="item">
+    <span class="tag tag-宏观">宏观</span>
+    <span class="time">2026-04-03 09:00</span>
+    ⚠️ 去重说明：jin10-dedup为monitor独占技能（workspace-monitor路径），news_reporter在cron任务中不得直接调用。
+    本节为降级替代：以昨日盘后（2026-04-02）简报为参照，对比今日盘前收集到的Tavily快讯进行人工核对标注。
+  </div>
+
+  <div class="item">
+    <span class="tag tag-宏观">宏观</span>
+    <span class="time">2026-04-03</span>
+    📌 重复（来自4月2日盘后）：伊朗EGA停产已提及；多晶硅期货调保已提及；美伊战事持续（无新进展）；央行货政委Q1例会（已发布）；螺纹钢周度数据（4月2日已有类似）
+  </div>
+
+  <div class="item">
+    <span class="tag tag-宏观">宏观</span>
+    <span class="time">2026-04-03</span>
+    📍 今日新增进展：特朗普钢铁/铝关税调整行政令签署（4月2日盘后已提及方向，今日正式签署生效）；
+    伊朗军方新一轮强硬表态（哈塔米+革命卫队同步发声，升级）；伊朗与阿曼起草霍尔木兹通行协议（新增谈判动向）；
+    王毅同沙特外交大臣通话（中沙协调升级）；CME上调铝期保（新增）；OPEC+周日讨论增产（新增）；
+    日经+1.44%/恒指+0.94%（亚洲市场新数据）；美股三大指数收涨（昨夜新数据）
+  </div>
+
+  <div class="section-title">📌 纯重复新闻（已在昨日盘后报告中覆盖）</div>
+
+  <div class="item">
+    <span class="tag tag-宏观">宏观</span>
+    伊朗封锁霍尔木兹海峡已超一个月（盘后简报已有）
+  </div>
+  <div class="item">
+    <span class="tag tag-宏观">宏观</span>
+    伊朗拒绝谈判/德黑兰最高领导未下达谈判许可（盘后简报已有）
+  </div>
+  <div class="item">
+    <span class="tag tag-期货">期货</span>
+    多晶硅期货4月3日起手续费+保证金调整（盘后简报已有）
+  </div>
+  <div class="item">
+    <span class="tag tag-资金面">资金面</span>
+    宁德时代捐赠500万股（盘后简报已有）
+  </div>
+  <div class="item">
+    <span class="tag tag-宏观">宏观</span>
+    盛屯矿业Q1净利润预增（盘后简报已有）
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>盘前简报 — Jerry 2026-04-02</title>
+  <style>
+    body { background: #0d1117; color: #e6edf3; font-family: -apple-system, sans-serif; padding: 16px; max-width: 900px; }
+    .header { font-size: 13px; color: #8b949e; border-bottom: 1px solid #30363d; padding-bottom: 8px; margin-bottom: 16px; }
+    .signal { background: #1f6feb22; border: 1px solid #1f6feb44; border-radius: 6px; padding: 12px; margin-bottom: 16px; }
+    .signal-label { font-size: 10px; color: #58a6ff; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .signal-text { font-size: 14px; color: #e6edf3; line-height: 1.5; }
+    .tag { display: inline-block; padding: 1px 6px; border-radius: 4px; font-size: 10px; font-weight: bold; margin-right: 4px; }
+    .tag-外汇 { background: #1f6feb22; color: #58a6ff; }
+    .tag-债券 { background: #23863622; color: #3fb950; }
+    .tag-期货 { background: #d2992222; color: #e3b341; }
+    .tag-宏观 { background: #f8514922; color: #ff7b72; }
+    .tag-资金面 { background: #a371f722; color: #bc8cff; }
+    .tag-地缘 { background: #f0883e22; color: #f0883e; }
+    .item { margin-bottom: 10px; line-height: 1.5; font-size: 12.5px; padding-bottom: 10px; border-bottom: 1px solid #21262d; }
+    .item:last-child { border-bottom: none; }
+    .time { color: #8b949e; font-size: 10px; margin-right: 6px; font-family: monospace; }
+    .source { color: #484f58; font-size: 10px; }
+    .section-title { font-size: 11px; color: #8b949e; text-transform: uppercase; letter-spacing: 0.05em; margin: 16px 0 8px; }
+    .degraded { background: #d2992222; color: #e3b341; font-size: 11px; padding: 6px 10px; border-radius: 4px; margin-bottom: 12px; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    盘前简报 | 2026-04-02 09:27 | 金十数据（web_fetch受阻，降级为Tavily搜索） | partial/degraded
+  </div>
+
+  <div class="signal">
+    <div class="signal-label">⚡ 今日单一最重要信号</div>
+    <div class="signal-text">
+      特朗普称美国将在2–3周内结束对伊朗战争 → 美伊停火预期升温 →
+      美股4月1日大幅反弹（科技股领涨），避险资产黄金短线承压后反弹（现货黄金突破4700美元），
+      原油先跌后回升，美债10Y收益率上行至4.34%附近。
+    </div>
+  </div>
+
+  <div class="degraded">
+    ⚠ 数据源降级说明：jin10.com / wallstreetcn.com / eastmoney.com 均被web_fetch拦截（内部IP策略），
+    本简报以Tavily web_search为替代源，覆盖面有限，内容为精选摘要，非全量快讯。
+  </div>
+
+  <div class="section-title">📊 昨日收盘关键数据</div>
+
+  <div class="item">
+    <span class="tag tag-债券">债券</span>
+    <span class="time">美股收盘</span>
+    10年期美债收益率 +1.8bp → 4.34%；2年期美债收益率 +1.4bp → 3.82%（通胀预期压制，长端承压）
+    <span class="source">来源: 新浪财经 2026-04-02</span>
+  </div>
+
+  <div class="item">
+    <span class="tag tag-外汇">外汇</span>
+    <span class="time">美股收盘</span>
+    美元指数回落；离岸人民币升值；美伊停火预期削弱避险美元需求
+    <span class="source">来源: 新浪财经 2026-04-02</span>
+  </div>
+
+  <div class="item">
+    <span class="tag tag-期货">期货</span>
+    <span class="time">4月1日</span>
+    WTI 5月原油期货收跌1.24%；布伦特原油盘中跌破100美元后反弹（停火预期vs实际中断）
+    <span class="source">来源: 华尔街见闻 2026-04-02</span>
+  </div>
+
+  <div class="item">
+    <span class="tag tag-期货">期货</span>
+    <span class="time">4月1日</span>
+    COMEX黄金期货（GCJ26）收涨超2.7%，盘中最高触及4785.90美元；现货黄金突破4700美元/盎司
+    <span class="source">来源: 新浪财经 2026-04-02</span>
+  </div>
+
+  <div class="item">
+    <span class="tag tag-宏观">宏观</span>
+    <span class="time">4月1日</span>
+    美股大幅反弹：三大指数收涨，科技股领涨；芯片股强势（韩股三星电子涨13%带动）
+    <span class="source">来源: 芝麻AI 2026-04-02</span>
+  </div>
+
+  <div class="section-title">🇨🇳 国内宏观 / 政策</div>
+
+  <div class="item">
+    <span class="tag tag-宏观">宏观</span>
+    <span class="time">2026-04-01</span>
+    央行货政委2026年Q1例会（3月26日召开，4月1日发布）：继续实施适度宽松货币政策；加大逆周期调节；促进经济稳定增长和物价合理回升；强化利率政策执行监督，降低融资中间费用；增强外汇市场韧性，维护金融市场稳定运行
+    <span class="source">来源: 中国人民银行官网</span>
+  </div>
+
+  <div class="item">
+    <span class="tag tag-债券">债券</span>
+    <span class="time">2026-03-31</span>
+    人民银行：2月末10年期国债收益率1.78%；银行间债券市场托管余额198.9万亿元；境外机构持有3.4万亿元（占比1.7%）
+    <span class="source">来源: 新浪财经 2026-04-01</span>
+  </div>
+
+  <div class="item">
+    <span class="tag tag-资金面">资金面</span>
+    <span class="time">2026-04-01</span>
+    A股4月首日交易放量至2万亿元上方，近4500只个股收红，医药、通信、有色等板块领涨
+    <span class="source">来源: 芝麻AI 2026-04-02</span>
+  </div>
+
+  <div class="section-title">🌍 海外宏观 / 地缘</div>
+
+  <div class="item">
+    <span class="tag tag-地缘">地缘</span>
+    <span class="time">2026-03-31 / 04-01</span>
+    特朗普称美国将在2–3周内结束对伊朗战争，暗示可能与德黑兰达成协议；阿联酋准备协助武力打通霍尔木兹海峡；伊朗威胁攻击英伟达/苹果/微软/谷歌等18家美国科技公司（反击暗杀行动）
+    <span class="source">来源: 芝麻AI、华尔街见闻 2026-04-02</span>
+  </div>
+
+  <div class="item">
+    <span class="tag tag-宏观">宏观</span>
+    <span class="time">持续</span>
+    美伊冲突仍是核心驱动：伊朗封锁霍尔木兹海峡（影响全球约1/5油气供应）已超一个月； OPEC+减产支撑油价底部；美债收益率曲线倒挂风险持续
+    <span class="source">来源: 综合</span>
+  </div>
+
+  <div class="item">
+    <span class="tag tag-宏观">宏观</span>
+    <span class="time">2026-04-01</span>
+    韩国KOSPI指数收涨8.4%，三星电子大涨13%（2001年12月以来最大单日涨幅）；存储芯片板块受三大利好推动：美伊局势缓和 + 3月出口飙升 + OpenAI 1220亿美元融资提振需求
+    <span class="source">来源: 芝麻AI 2026-04-02</span>
+  </div>
+
+  <div class="section-title">📌 今日关注</div>
+
+  <div class="item">
+    <span class="tag tag-宏观">宏观</span>
+    4月中下旬一季报业绩明朗 + 国内政策导向进一步清晰 + 中东地缘局势阶段性稳定后，市场拐点有望确认
+  </div>
+  <div class="item">
+    <span class="tag tag-债券">债券</span>
+    关注：10Y美债收益率能否守住4.34%阻力；黄金能否突破4800美元；原油100美元/桶支撑
+  </div>
+  <div class="item">
+    <span class="tag tag-资金面">资金面</span>
+    关注：A股量能能否持续（4月1日超2万亿）；人民币汇率中间价定价信号
+  </div>
+
+</body>
+</html>
