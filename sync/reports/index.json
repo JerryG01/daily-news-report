@@ -6,6 +6,11 @@
       "file": "daily_brief_20260414_morning.html"
     },
     {
+      "date": "20260414",
+      "type": "afternoon",
+      "file": "daily_brief_20260414_afternoon.html"
+    },
+    {
       "date": "20260413",
       "type": "morning",
       "file": "daily_brief_20260413_morning.html"
@@ -134,5 +139,5 @@
     }
   ],
   "articles": [],
-  "generated": "2026-04-14T04:45:29Z"
+  "generated": "2026-04-14T10:00:12Z"
 }
