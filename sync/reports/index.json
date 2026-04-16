@@ -1,6 +1,11 @@
 {
   "reports": [
     {
+      "date": "20260416",
+      "type": "afternoon",
+      "file": "daily_brief_20260416_afternoon.html"
+    },
+    {
       "date": "20260415",
       "type": "morning",
       "file": "daily_brief_20260415_morning.html"
@@ -88,6 +93,11 @@
   ],
   "fun_facts": [
     {
+      "date": "20260416",
+      "type": "fun_fact",
+      "file": "fun_fact_20260416.html"
+    },
+    {
       "date": "20260415",
       "type": "fun_fact",
       "file": "fun_fact_20260415.html"
@@ -149,5 +159,5 @@
     }
   ],
   "articles": [],
-  "generated": "2026-04-15T10:00:27Z"
+  "generated": "2026-04-16T10:00:12Z"
 }
