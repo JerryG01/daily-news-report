@@ -1,6 +1,11 @@
 {
   "reports": [
     {
+      "date": "20260417",
+      "type": "morning",
+      "file": "daily_brief_20260417_morning.html"
+    },
+    {
       "date": "20260416",
       "type": "afternoon",
       "file": "daily_brief_20260416_afternoon.html"
@@ -159,5 +164,5 @@
     }
   ],
   "articles": [],
-  "generated": "2026-04-16T10:00:12Z"
+  "generated": "2026-04-17T01:05:11Z"
 }
