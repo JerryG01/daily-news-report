@@ -138,6 +138,11 @@
   ],
   "fun_facts": [
     {
+      "date": "20260424",
+      "type": "fun_fact",
+      "file": "fun_fact_20260424.html"
+    },
+    {
       "date": "20260423",
       "type": "fun_fact",
       "file": "fun_fact_20260423.html"
@@ -229,5 +234,5 @@
     }
   ],
   "articles": [],
-  "generated": "2026-04-24T01:05:10Z"
+  "generated": "2026-04-24T04:35:09Z"
 }
