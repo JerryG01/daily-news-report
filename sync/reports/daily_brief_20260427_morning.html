@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>盘前简报 — Jerry 2026-04-27</title>
+  <style>
+    body { background: #0d1117; color: #e6edf3; font-family: -apple-system, sans-serif; padding: 16px; max-width: 900px; }
+    .header { font-size: 13px; color: #8b949e; border-bottom: 1px solid #30363d; padding-bottom: 8px; margin-bottom: 16px; }
+    .signal { background: #1f6feb22; border: 1px solid #1f6feb44; border-radius: 6px; padding: 12px; margin-bottom: 16px; }
+    .signal-label { font-size: 10px; color: #58a6ff; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .signal-text { font-size: 14px; color: #e6edf3; line-height: 1.5; }
+    .tag { display: inline-block; padding: 1px 6px; border-radius: 4px; font-size: 10px; font-weight: bold; margin-right: 4px; }
+    .tag-外汇 { background: #1f6feb22; color: #58a6ff; }
+    .tag-债券 { background: #23863622; color: #3fb950; }
+    .tag-期货 { background: #d2992222; color: #e3b341; }
+    .tag-宏观 { background: #f8514922; color: #ff7b72; }
+    .tag-资金面 { background: #a371f722; color: #bc8cff; }
+    .tag-地缘 { background: #f0883e22; color: #f0883e; }
+    .tag-贵金属 { background: #d2992222; color: #e3b341; }
+    .tag-能源 { background: #d2992222; color: #e3b341; }
+    .item { margin-bottom: 10px; line-height: 1.5; font-size: 12.5px; padding-bottom: 10px; border-bottom: 1px solid #21262d; }
+    .item:last-child { border-bottom: none; }
+    .time { color: #8b949e; font-size: 10px; margin-right: 6px; font-family: monospace; }
+    .source { color: #484f58; font-size: 10px; }
+    .section-title { font-size: 11px; color: #8b949e; text-transform: uppercase; letter-spacing: 0.05em; margin: 16px 0 8px; }
+    .degraded { background: #d2992222; color: #e3b341; font-size: 11px; padding: 6px 10px; border-radius: 4px; margin-bottom: 12px; }
+    .na-mark { color: #f85149; font-size: 10px; font-weight: bold; margin-left: 4px; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    盘前简报 | 2026-04-27 09:00 | 数据源: jin10.com (web_fetch受阻，降级运行) | status: partial
+  </div>
+
+  <div class="degraded">
+    ⚠ 数据源降级说明：jin10.com 被 web_fetch 内部 IP 策略拦截，今日盘前实时快讯不可用。
+    去重对比无法执行（jin10-dedup 为 monitor 专属技能，非授权不得调用）。
+  </div>
+
+  <div class="signal">
+    <div class="signal-label">⚡ 今日最重要信号</div>
+    <div class="signal-text">
+      数据源降级，无今日实时快讯。本简报无法生成有效内容。
+      jin10.com 持续被内部 IP 策略拦截，建议通过其他渠道（金十 App / 浏览器插件 / 手动导出）获取今日数据并补录。
+    </div>
+  </div>
+
+  <div class="section-title">📍 进展追踪</div>
+  <div class="item">
+    <span class="na-mark">🔴 今日无实时快讯更新</span>：jin10.com 被内部 IP 策略拦截，盘前无法获取 4 月 27 日实时数据。
+    本节为空。
+  </div>
+
+  <div class="section-title">📌 纯重复新闻</div>
+  <div class="item">
+    <span class="na-mark">⚠ 无数据可供比对</span>：jin10.com 实时数据不可用，无法进行去重对比。
+    jin10-dedup 技能为 monitor 专属，news_reporter 未获授权不得调用。
+  </div>
+
+  <div class="section-title">⚠️ 数据可用性说明</div>
+  <div class="item">
+    <span class="na-mark">🔴 今日实时快讯不可用</span>：jin10.com 在盘前 web_fetch 中被内部 IP 策略拦截。
+    本简报为降级占位文件，不代表 4 月 27 日实际市场情况。
+  </div>
+
+</body>
+</html>
